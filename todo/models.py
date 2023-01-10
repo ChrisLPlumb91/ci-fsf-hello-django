@@ -9,4 +9,3 @@ class Item(models.Model):
 
     def __string__(self):
         return self.name
-
