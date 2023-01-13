@@ -21,7 +21,7 @@ def add_item(request):
             form.save()
             return redirect('get_todo_list')
 
-    form = FormItem()
+    form = ItemForm()
     context = {
         'form': form
     }
@@ -38,7 +38,7 @@ def edit_item(request, item_id):
             form.save()
             return redirect('get_todo_list')
 
-    form = FormItem()
+    form = ItemForm()
     context = {
         'form': form
     }
